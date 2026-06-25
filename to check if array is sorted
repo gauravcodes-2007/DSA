@@ -1,1 +1,14 @@
-
+class Solution{	
+	public:
+		bool isSorted(vector<int>& nums){
+			int compare = nums[0];
+            for(int i=0; i<nums.size(); i++){
+                if(nums[i]>=compare){
+                    compare = nums[i];                     
+                }
+                else
+                   return false;
+            }
+            return true;
+		}
+};
